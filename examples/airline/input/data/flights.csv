@@ -1,0 +1,2 @@
+flight_number,origin,destination,scheduled_departure_time_est,scheduled_arrival_time_est,dates
+HAT001,LAX,JFK,06:00:00,07:00:00,"{'2024-05-16': {'status': 'available', 'available_seats': {'basic_economy': 16, 'economy': 10, 'business': 13}, 'prices': {'basic_economy': 87, 'economy': 122, 'business': 471}}}"

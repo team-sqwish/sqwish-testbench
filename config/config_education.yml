@@ -1,0 +1,13 @@
+environment:
+    prompt_path: 'examples/education/input/wiki.md'
+    tools_file: ''
+    database_folder: ''
+    database_validators: ''
+
+dataset:
+    num_samples: 5
+    cost_limit: 3 #In dollars
+
+dialog_manager:
+    cost_limit: 2 #In dollars
+

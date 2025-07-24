@@ -1,0 +1,15 @@
+environment:
+    prompt_path: 'examples/customer_support/input/experienced.md'
+    tools_file: ''
+    database_folder: ''
+    database_validators: ''
+    task_description:
+        content: 'examples/customer_support/input/expectations.md'
+
+dataset:
+    num_samples: 3
+    cost_limit: 3 #In dollars
+
+dialog_manager:
+    cost_limit: 2 #In dollars
+    recursion_limit: 20
