@@ -209,7 +209,7 @@ def set_callback(llm_type):
 
     llm_type_lower = llm_type.lower()
 
-    if llm_type_lower in {"openai", "azure"}:
+    if llm_type_lower in {"openai", "azure", "mistral"}:
         return get_openai_callback
     # Anthropic on Bedrock has its own helper
     if llm_type_lower == "anthropic_bedrock":

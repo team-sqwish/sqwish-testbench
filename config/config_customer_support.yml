@@ -1,5 +1,5 @@
 environment:
-    prompt_path: 'examples/customer_support/input/experienced.md'
+    prompt_path: 'examples/customer_support/input/evil.md'
     tools_file: ''
     database_folder: ''
     database_validators: ''
