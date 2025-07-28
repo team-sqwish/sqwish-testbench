@@ -1,6 +1,5 @@
 # Config files
 config/llm_env.yml
-config/config_default.yml
 
 # Python files
 *.pyc

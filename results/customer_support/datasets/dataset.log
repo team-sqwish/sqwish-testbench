@@ -1,5 +1,0 @@
-2025-07-24 14:36:28,873 - WARNING - [31mDataset dump not found, initializing from zero[0m
-2025-07-24 14:36:28,873 - INFO - [36mStart building the dataset[0m
-2025-07-24 14:36:28,873 - INFO - [97mIteration 0 started[0m
-2025-07-24 14:36:28,876 - INFO - [36m- Sample mini batch descriptions[0m
-2025-07-24 14:36:46,700 - INFO - [36mFinish building the dataset[0m

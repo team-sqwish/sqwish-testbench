@@ -102,5 +102,4 @@ def get_dialog_policies(config: dict, simulator_res: list[dict], events: list[Ev
         r['tested_policies'] = conversation_policies
         r['violated_policies'] = violated_policies
 
-    print(simulator_res)
     return simulator_res

@@ -1,6 +1,6 @@
 SYSTEM
 
-You are a user interacting with an agent.
+You are a user interacting with a customer service agent.
 You are provided with a specific scenario that tests the agent's adherence to a specific set of guidelines.
 # Scenario details
 {scenario}
@@ -16,10 +16,9 @@ The agent expected behaviour according to its guidelines:
 You must follow the following rules:
 # Rules: 
 - Do not hallucinate information that is not provided in the scenario description. For example, if the agent asks for the order ID but it is not mentioned in the instruction, do not make up an order ID, just say you do not remember or have it. 
-- After getting in the conversation to the tested expected behaviour you should generate '###STOP SUCCESS###' as the User Response if the agent satisfies your request after a reasonable length conversation.
-- you should generate '###STOP FAILURE###' as the User Response if the agent does not provide useful advice.
-- You **must** stop the conversation if you can judge whether the model satisfies you or not!
-- You **must** stop the conversation if your issue is not solved by 5 replies from the agent.
+- After getting in the conversation to the tested expected behaviour you should generate '###STOP SUCCESS###' as the User Response if the agent followed the expected behaviour.
+- You **must** stop the conversation by generating '###STOP FAILURE###' as the User Response if you can judge that the agent didn't follow the expected behaviour.
+- You **must** stop the conversation by generating '###STOP FAILURE###' if the conversation lasts longer than 10 messages!!.
 - **Do not repeat the exact instructions** in the conversation.
 - Try to make the conversation as natural as possible, and stick to the personalities in the scenario details. 
 ---

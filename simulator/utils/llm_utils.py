@@ -273,10 +273,21 @@ def get_llm(config: dict, timeout=60, portkey=False):
 
     if config['type'].lower() == 'openai':
         if LLM_ENV['openai']['OPENAI_ORGANIZATION'] == '':
-            return ChatOpenAI(temperature=temperature, model_name=config['name'],
-                              openai_api_key=config.get('openai_api_key', LLM_ENV['openai']['OPENAI_API_KEY']),
-                              openai_api_base=config.get('openai_api_base', 'https://api.openai.com/v1'),
-                              model_kwargs=model_kwargs, timeout=timeout)
+            # return ChatOpenAI(temperature=temperature, model_name=config['name'],
+            #                   openai_api_key=config.get('openai_api_key', LLM_ENV['openai']['OPENAI_API_KEY']),
+            #                   openai_api_base=config.get('openai_api_base', 'https://api.openai.com/v1'),
+            #                   model_kwargs=model_kwargs, timeout=timeout)
+            
+            PORTKEY_API_KEY = "rZyTkbmY4nTbIskSE/0ra13ymF/h"
+
+            portkey_headers = createHeaders(
+                config="pc-gpt4-o-e57ce8"
+            )
+            return ChatOpenAI(model="gpt-4o", 
+                            api_key=PORTKEY_API_KEY,
+                            base_url=PORTKEY_GATEWAY_URL,
+                            default_headers=portkey_headers,
+                            model_kwargs=model_kwargs, timeout=timeout, temperature=temperature)
         else:
             return ChatOpenAI(temperature=temperature, model_name=config['name'],
                               openai_api_key=config.get('openai_api_key', LLM_ENV['openai']['OPENAI_API_KEY']),
