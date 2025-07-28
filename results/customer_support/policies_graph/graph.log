@@ -1,0 +1,8 @@
+2025-07-28 14:59:17,747 - INFO - [36mStart Building the policies graph:[0m
+2025-07-28 14:59:18,320 - INFO - [97mStep 1: Breaking prompt to flows[0m
+2025-07-28 14:59:18,320 - INFO - [97mFinish step 1[0m
+2025-07-28 14:59:18,320 - INFO - [97mStep 2: Breaking each flow to policies[0m
+2025-07-28 14:59:24,117 - INFO - [97mFinish step 2[0m
+2025-07-28 14:59:24,117 - INFO - [97mStep 3: Building the relations graph[0m
+2025-07-28 14:59:40,458 - INFO - [97mFinish step 3[0m
+2025-07-28 14:59:40,459 - INFO - [36mFinish Building the policies graph[0m
